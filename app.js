@@ -19,7 +19,8 @@ function getAns(){
     nums = calc.proc(nums);
     setTimeout(function(){
       console.log(nums);
-      getAns();
+      if(nums !== "exit")
+        getAns();
     }, 0);
     rl.close();
   });
