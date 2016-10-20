@@ -48,6 +48,15 @@ module.exports.proc = function(arr){
         temparr[temparr.length] = String(Number(arr[arr.length - 3]) + Number(arr[arr.length - 2]));
         return temparr;
 
+      // Average
+      case "AVERAGE" :
+      case "AV"      :
+      case "MEAN"    :
+        for(var avunit = 0; avunit < arr.length - 1; avunit++){
+          res += Number(arr[avunit]);
+        }
+        res /= arr.length - 1;
+        break;
 
       // Clear the array
       case "CLEAR":
