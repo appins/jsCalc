@@ -39,3 +39,19 @@ Examples
 :add
   [ '18' ]
 ```
+
+---
+
+
+### Current commands
+(Letter case doesn't matter)
+
+| Command | Use                                  | Shortcut
+|---------|--------------------------------------|
+| ADD     | Adds all numbers together            | +
+| PRODUCT | Multiplies all numbers together      | *
+| ADDLAST | Adds the last 2 numbers together     | +l
+| AVERAGE | Takes the average of all the numbers | AV
+| SORTL   | Sorts numbers from low to high       | L
+| DELETE  | Deletes last element in the array    | DEL
+| EXIT    | Leaves the program                   | E

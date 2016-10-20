@@ -41,6 +41,7 @@ module.exports.proc = function(arr){
       case "ADD 2"   :
       case "SUMLAST" :
       case "+LAST"   :
+      case "+L"      :
         var temparr = [];
         for(var addlast = 0; addlast < arr.length - 3; addlast++){
           temparr[addlast] = arr[addlast];
@@ -58,6 +59,14 @@ module.exports.proc = function(arr){
         res /= arr.length - 1;
         break;
 
+      // Sort
+      case "LOWTOHIGH" :
+      case "SORTL"     :
+      case "L"         :
+        arr.pop();
+        arr.sort(function(a,b){return a-b;});
+        return arr;
+
       // Clear the array
       case "CLEAR":
         return [];
@@ -65,18 +74,15 @@ module.exports.proc = function(arr){
       // Delte the last member (if there is one)
       case "DEL"   :
       case "DELTE" :
-        var delarr = [];
-        if(arr.length !== 0){
-          for(var del = 0; del < arr.length - 2; del++){
-            delarr[del] = arr[del];
-          }
-        }
-        return delarr;
+        arr.pop();
+        arr.pop();
+        return arr;
 
       // Exit the program
       case "EXIT" :
       case "QUIT" :
       case "CLOSE":
+      case "E"    :
         return "exit";
 
       default:
