@@ -47,7 +47,7 @@ Examples
 (Letter case doesn't matter)
 
 | Command | Use                                  | Shortcut
-|---------|--------------------------------------|
+|---------|--------------------------------------|---
 | ADD     | Adds all numbers together            | +
 | PRODUCT | Multiplies all numbers together      | *
 | ADDLAST | Adds the last 2 numbers together     | +l
