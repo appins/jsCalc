@@ -86,8 +86,9 @@ module.exports.proc = function(arr){
         return "exit";
 
       default:
-      res = 0;
-      console.log("Incorrect input");
+        arr.pop();
+        console.log("Incorrect input: " + lastIn);
+        return arr;
     }
     return [String(res)];
   }
