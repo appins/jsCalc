@@ -7,7 +7,11 @@ module.exports.proc = function(arr){
 
   // If last input was a number
   if(Number(lastIn) || Number(lastIn) === 0){
+    if(lastIn === ''){
+      arr.pop();
+    }
     return arr;
+
   }
   else{
     var res = 0;
@@ -49,6 +53,16 @@ module.exports.proc = function(arr){
         temparr[temparr.length] = String(Number(arr[arr.length - 3]) + Number(arr[arr.length - 2]));
         return temparr;
 
+      // Multiply last 2 numbers together
+      case "TIMESLAST"  :
+      case "*L"         :
+      case "MULTIPLY 2" :
+      case "TIMES 2"    :
+        arr.pop();
+        arr[arr.length - 2] = String(Number(arr[arr.length - 1]) * Number(arr[arr.length - 2]));
+        arr.pop();
+        return arr;
+
       // Average
       case "AVERAGE" :
       case "AV"      :
@@ -59,12 +73,41 @@ module.exports.proc = function(arr){
         res /= arr.length - 1;
         break;
 
-      // Sort
+      // Sort low to high (Most common)
+      case "SORT"      :
       case "LOWTOHIGH" :
       case "SORTL"     :
       case "L"         :
         arr.pop();
         arr.sort(function(a,b){return a-b;});
+        return arr;
+
+      // Square root only the last number
+      case "SQUARER"     :
+      case "SQRT"        :
+      case "SQUAREROOT"  :
+      case "SQUARE ROOT" :
+      case "SR"          :
+        arr.pop();
+        arr[arr.length - 1] = String(Math.sqrt(arr[arr.length - 1]));
+        return arr;
+
+      case "INCREMENT" :
+      case "INC"       :
+      case "++"        :
+        arr.pop();
+        if(arr.length >= 1){
+          arr[arr.length - 1]++;
+        }
+        return arr;
+
+      case "INCALL"       :
+      case "INCREMENTALL" :
+      case "++A":
+        arr.pop();
+        for(var intunit = 0; intunit < arr.length; intunit++){
+          arr[intunit]++;
+        }
         return arr;
 
       // Clear the array
@@ -90,7 +133,8 @@ module.exports.proc = function(arr){
         console.log("Incorrect input: " + lastIn);
         return arr;
     }
-    return [String(res)];
+
+      return [String(res)];
   }
 
 };

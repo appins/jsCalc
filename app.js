@@ -1,10 +1,11 @@
+// This file reads information from the console and outputs the result
+// It also handles exit requests
 /* jshint esversion: 6 */
 
+console.log("[ OLDEST --> NEWEST ]");
+
 const calc = require("./calc.js");
-
 const readline = require("readline");
-
-var exit = false;
 
 var nums = [];
 
