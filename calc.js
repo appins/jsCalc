@@ -92,6 +92,7 @@ module.exports.proc = function(arr){
         arr[arr.length - 1] = String(Math.sqrt(arr[arr.length - 1]));
         return arr;
 
+      // Increament last number
       case "INCREMENT" :
       case "INC"       :
       case "++"        :
@@ -101,6 +102,7 @@ module.exports.proc = function(arr){
         }
         return arr;
 
+      // Intrement all numbers in array
       case "INCALL"       :
       case "INCREMENTALL" :
       case "++A":
@@ -109,6 +111,31 @@ module.exports.proc = function(arr){
           arr[intunit]++;
         }
         return arr;
+
+      // Multiply all numbers by the last one in the array
+      case "MULTIBY"    :
+      case "MULTIPLYBY" :
+      case "MB"         :
+        arr.pop();
+        var factor = arr[arr.length - 1];
+        arr.pop();
+        for(var mbunit = 0; mbunit < arr.length; mbunit++){
+          arr[mbunit] *= factor;
+        }
+        return arr;
+
+      // Add all numbers by the last one in the array
+      case "ADDBY" :
+      case "SUMBY" :
+      case "AB"    :
+      case "+B"    :
+      arr.pop();
+      var diff = arr[arr.length - 1];
+      arr.pop();
+      for(var abunit = 0; abunit < arr.length; abunit++){
+        arr[abunit] = String(Number(arr[abunit]) + Number(diff));
+      }
+      return arr;
 
       // Clear the array
       case "CLEAR":
