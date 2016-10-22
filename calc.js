@@ -223,8 +223,8 @@ module.exports.proc = function(arr){
           }
           arr.shift();
         }
-
-        res = high - low;
+        
+        if(high !== undefined && low !== undefined) res = high - low;
         break;
 
       // Get the highest value in the set of numbers
@@ -241,7 +241,8 @@ module.exports.proc = function(arr){
           }
           arr.shift();
         }
-        res = max;
+
+        if (max !== undefined) res = max;
         break;
 
       // Get the lowest value in the set of numbers
@@ -260,7 +261,7 @@ module.exports.proc = function(arr){
           arr.shift();
         }
 
-        res = min;
+        if(min !== undefined) res = min;
         break;
 
       // Clear the array
