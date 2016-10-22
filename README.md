@@ -44,22 +44,26 @@ Examples
 
 
 ### Current commands
-(Letter case doesn't matter)
+(capitalization doesn't matter)
 
-| Command     | Use                                   | Shortcut
-|-------------|---------------------------------------|---------
-| `ADD`       | Adds all numbers together             | `+`
-| `PRODUCT`   | Multiplies all numbers together       | `*`
-| `ADDLAST`   | Adds the last 2 numbers together      | `+L`
-| `TIMESLAST` | Multiplies last 2 numbers together    | `*L`
-| `SQRT`      | Square roots the last number          | `SR`
-| `INCREMENT` | Increments the last number (by 1)     | `++`
-| `INCALL`    | Increment all numbers by 1            | `++A`
-| `AVERAGE`   | Takes the average of all the numbers  | `AV`
-| `ADDBY`     | Add all numbers by the newest number  | `AB`
-| `MULTIBY`   | Multiply all numbers my newest number | `MB`
-| `SORTL`     | Sorts numbers from low to high        | `L`
-| `NEWTOOLD`  | Move the newest to the oldest         | `NTO`
-| `DELETE`    | Deletes last element in the array     | `DEL`
-| `CLEAR`     | Clear all entries                     | `CL`
-| `EXIT`      | Leaves the program                    | `E`
+| Command     | Use                                            | Shortcut
+|-------------|------------------------------------------------|---------
+| `ADD`       | Adds all numbers together                      | `+`
+| `PRODUCT`   | Multiplies all numbers together                | `*`
+| `ADDLAST`   | Adds the last 2 numbers together               | `+L`
+| `TIMESLAST` | Multiplies last 2 numbers together             | `*L`
+| `SQRT`      | Square roots the last number                   | `SR`
+| `INCREMENT` | Increments the last number (by 1)              | `++`
+| `INCALL`    | Increment all numbers by 1                     | `++A`
+| `AVERAGE`   | Takes the average of all the numbers           | `AV`
+| `MODE`      | Get the most common value, if none, -1         | `MO`
+| `RANGE`     | Get the difference between max and min in set  | `RA`
+| `MAXIMUM`   | Get the max value in the set                   | `MAX`
+| `MINIMUM`   | Get the min value in the sat                   | `MIN`
+| `ADDBY`     | Add all numbers by the newest number           | `AB`
+| `MULTIBY`   | Multiply all numbers my newest number          | `MB`
+| `SORTL`     | Sorts numbers from low to high                 | `L`
+| `NEWTOOLD`  | Move the newest to the oldest                  | `NTO`
+| `DELETE`    | Deletes last element in the array              | `DEL`
+| `CLEAR`     | Clear all entries                              | `CL`
+| `EXIT`      | Leaves the program                             | `E`

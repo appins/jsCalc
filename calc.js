@@ -165,7 +165,103 @@ module.exports.proc = function(arr){
 
         break;
 
+      // Mode
+      case "MODE"   :
+      case "COMMON" :
+      case "MO"     :
+        arr.pop();
+        var modeob = {};
 
+        // The value that occurst the most times, in the format of
+        // [How many times, number, and if it is an error]
+        var currhigh = [0, undefined, true];
+
+        // Make an object of all the values
+        var modearr = arr;
+        while(modearr.length > 0){
+          if(modeob[modearr[0]] === undefined){
+            modeob[modearr[0]] = 1;
+          }
+          else{
+            modeob[modearr[0]]++;
+          }
+
+          if(currhigh[0] < modeob[modearr[0]]){
+            currhigh[1] = modearr[0];
+            currhigh[0] = modeob[modearr[0]];
+            currhigh[2] = false;
+          }
+          else if(currhigh[0] == modeob[modearr[0]]){
+            currhigh[2] = true;
+          }
+          modearr.shift();
+        }
+
+        if(currhigh[2]){
+          res = '-1';
+        }
+        else{
+          res = currhigh[1];
+        }
+
+        break;
+
+      // Find the difference between the maximum and minimum values
+      case "RANGE" :
+      case "RA"    :
+        arr.pop();
+        var high = arr[0];
+        var low = arr[0];
+        arr.shift();
+
+        while(arr.length > 0){
+          if(arr[0] > high){
+            high = arr[0];
+          }
+          if(arr[0] < low){
+            low = arr[0];
+          }
+          arr.shift();
+        }
+
+        res = high - low;
+        break;
+
+      // Get the highest value in the set of numbers
+      case "MAXIMUM" :
+      case "MAX"     :
+      case "HIGH"    :
+      case "MOST"    :
+        arr.pop();
+        var max = arr[0];
+        arr.shift();
+        while(arr.length > 0){
+          if(arr[0] > max){
+            max = arr[0];
+          }
+          arr.shift();
+        }
+        res = max;
+        break;
+
+      // Get the lowest value in the set of numbers
+      case "MINIMUM" :
+      case "MIN"     :
+      case "LEAST"   :
+      case "LOW"     :
+      case "LOWEST"  :
+        arr.pop();
+        var min = arr[0];
+        arr.shift();
+        while(arr.length > 0){
+          if(arr[0] < min){
+            min = arr[0];
+          }
+          arr.shift();
+        }
+
+        res = min;
+        break;
 
       // Clear the array
       case "CLEAR":
