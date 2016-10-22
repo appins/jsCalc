@@ -124,6 +124,15 @@ module.exports.proc = function(arr){
         }
         return arr;
 
+      // Moves newest element to oldest element
+      case "NEWTOOLD" :
+      case "NTO"      :
+        arr.pop();
+        var first = arr[arr.length - 1];
+        arr.pop();
+        arr = (first + ',' + arr).split(',');
+        return arr;
+
       // Add all numbers by the last one in the array
       case "ADDBY" :
       case "SUMBY" :

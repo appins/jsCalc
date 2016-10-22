@@ -59,5 +59,6 @@ Examples
 | `ADDBY`     | Add all numbers by the newest number  | `AB`
 | `MULTIBY`   | Multiply all numbers my newest number | `MB`
 | `SORTL`     | Sorts numbers from low to high        | `L`
+| `NEWTOOLD`  | Move the newest to the oldest         | `NTO`
 | `DELETE`    | Deletes last element in the array     | `DEL`
 | `EXIT`      | Leaves the program                    | `E`
