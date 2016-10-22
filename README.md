@@ -16,7 +16,7 @@ Currently, this calculator has several uses.
 To enter number, just type a number and hit enter, to ender a command,
 just enter the word of the command.
 
-This project is similar to the FOURTH programming language
+This project is similar to the FORTH programming language
 
 Examples
 ```
@@ -61,4 +61,5 @@ Examples
 | `SORTL`     | Sorts numbers from low to high        | `L`
 | `NEWTOOLD`  | Move the newest to the oldest         | `NTO`
 | `DELETE`    | Deletes last element in the array     | `DEL`
+| `CLEAR`     | Clear all entries                     | `CL`
 | `EXIT`      | Leaves the program                    | `E`

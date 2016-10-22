@@ -138,16 +138,38 @@ module.exports.proc = function(arr){
       case "SUMBY" :
       case "AB"    :
       case "+B"    :
-      arr.pop();
-      var diff = arr[arr.length - 1];
-      arr.pop();
-      for(var abunit = 0; abunit < arr.length; abunit++){
-        arr[abunit] = String(Number(arr[abunit]) + Number(diff));
-      }
-      return arr;
+        arr.pop();
+        var diff = arr[arr.length - 1];
+        arr.pop();
+        for(var abunit = 0; abunit < arr.length; abunit++){
+          arr[abunit] = String(Number(arr[abunit]) + Number(diff));
+        }
+        return arr;
+
+      // Find the medaian of the set of numbers
+      case "MEDIAN" :
+      case "MED"    :
+        arr.pop();
+        arr.sort(function(x, y){return x-y;});
+        while(arr.length > 2){
+          arr.pop();
+          arr.shift();
+        }
+
+        if(arr.length == 1){
+          res = arr[0];
+        }
+        else if(arr.length == 2){
+          res = String((Number(arr[0]) + Number(arr[1])) / 2);
+        }
+
+        break;
+
+
 
       // Clear the array
       case "CLEAR":
+      case "CL"   :
         return [];
 
       // Delte the last member (if there is one)
