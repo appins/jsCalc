@@ -124,6 +124,13 @@ module.exports.proc = function(arr){
         }
         return arr;
 
+      // Insert a random 1 or a 0
+      case "RANDOM" :
+      case "RAND"   :
+        arr.pop();
+        arr[arr.length] = Math.round(Math.random());
+        return arr;
+
       // Moves newest element to oldest element
       case "NEWTOOLD" :
       case "NTO"      :
@@ -131,6 +138,15 @@ module.exports.proc = function(arr){
         var first = arr[arr.length - 1];
         arr.pop();
         arr = (first + ',' + arr).split(',');
+        return arr;
+
+      // Moves oldest to newest
+      case "OLDTONEW" :
+      case "OTN"      :
+        arr.pop();
+        var oldest = arr[0];
+        arr.shift();
+        arr = (arr + ',' + oldest).split(',');
         return arr;
 
       // Add all numbers by the last one in the array
@@ -223,7 +239,7 @@ module.exports.proc = function(arr){
           }
           arr.shift();
         }
-        
+
         if(high !== undefined && low !== undefined) res = high - low;
         break;
 

@@ -63,7 +63,9 @@ Examples
 | `ADDBY`     | Add all numbers by the newest number           | `AB`
 | `MULTIBY`   | Multiply all numbers my newest number          | `MB`
 | `SORTL`     | Sorts numbers from low to high                 | `L`
+| `RANDOM`    | Inset a random 1 or a random 0                 | `RAND`
 | `NEWTOOLD`  | Move the newest to the oldest                  | `NTO`
+| `OLDTONEW`  | Move the oldest to the newest                  | `OTN`
 | `DELETE`    | Deletes last element in the array              | `DEL`
 | `CLEAR`     | Clear all entries                              | `CL`
 | `EXIT`      | Leaves the program                             | `E`
