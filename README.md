@@ -3,6 +3,18 @@ A CLI calculator made in node.js
 
 ---
 
+### Why should I use this calculator? Why not just use forth or whatever?
+#### Forth is a different thing
+This calculator is *NOT FORTH* this calculator is just similar to forth in a few ways.
+
+This calculator is useful for things like averages, addition, multiplication and other operations (like mode) on a set of numbers. It was primarily created for standard deviations and other useful operations.
+
+Currently it doesn't have all that I want. I will be frequently adding uses and applications that will be useful to students in engineering and hopefully computer science too.
+
+This calculator is not based on forth, but after learning what forth is I realized it had a very similar style.
+
+---
+
 ### Setting up
 To get started, clone the repo, cd to it, and type `make` in a terminal
 Please note that you need node.js installed.
@@ -69,3 +81,9 @@ Examples
 | `DELETE`    | Deletes last element in the array              | `DEL`
 | `CLEAR`     | Clear all entries                              | `CL`
 | `EXIT`      | Leaves the program                             | `E`
+
+### TODO
+Add larger numbers, maybe. Currently this project used the basic `var` to create variables.
+
+### Bugs
+If you find any buys report them by [email](mailto:alexandersonone@gmail.com)
