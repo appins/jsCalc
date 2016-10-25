@@ -6,15 +6,18 @@
 function engnot(x){
   // [value under/equil to x, value over x, name, multiplier]
   var units = [
-    // Over 1
-    [1e0, 1e3 , "" , 1e0 ],
-    [1e3, 1e6 , "k", 1e-3],
-    [1e6, 1e9 , "M", 1e-6],
-    [1e9, 1e12, "G", 1e-9],
+    // Over (or equal to) 1
+    [1e0 , 1e3 , "" , 1e0  ],
+    [1e3 , 1e6 , "k", 1e-3 ],
+    [1e6 , 1e9 , "M", 1e-6 ],
+    [1e9 , 1e12, "G", 1e-9 ],
+    [1e12, 1e15, "T", 1e-12],
     // Under 1
-    [1e-3, 1e0 , "m", 1e3],
-    [1e-6, 1e-3, "u", 1e6],
-    [1e-9, 1e-6, "n", 1e9]
+    [1e-3 , 1e0  , "m", 1e3 ],
+    [1e-6 , 1e-3 , "u", 1e6 ],
+    [1e-9 , 1e-6 , "n", 1e9 ],
+    [1e-12, 1e-9 , "p", 1e12],
+    [1e-15, 1e-12, "f", 1e15]
   ];
   for(var i = 0; i < units.length; i++){
     if(x >= units[i][0] && x < units[i][1]){
