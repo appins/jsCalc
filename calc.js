@@ -2,6 +2,31 @@
 
 /*jshint esversion: 6 */
 
+// Get engineering notation of units
+function engnot(x){
+  // [value under/equil to x, value over x, name, multiplier]
+  var units = [
+    // Over 1
+    [1e0, 1e3 , "" , 1e0 ],
+    [1e3, 1e6 , "k", 1e-3],
+    [1e6, 1e9 , "M", 1e-6],
+    [1e9, 1e12, "G", 1e-9],
+    // Under 1
+    [1e-3, 1e0 , "m", 1e3],
+    [1e-6, 1e-3, "u", 1e6],
+    [1e-9, 1e-6, "n", 1e9]
+  ];
+  for(var i = 0; i < units.length; i++){
+    if(x >= units[i][0] && x < units[i][1]){
+      return (x * units[i][3]) + units[i][2];
+    }
+  }
+  // If no unit is found
+  return String(x);
+}
+
+module.exports.engnot = engnot;
+
 module.exports.proc = function(arr){
   var lastIn = arr[arr.length - 1];
 
@@ -160,6 +185,19 @@ module.exports.proc = function(arr){
         for(var abunit = 0; abunit < arr.length; abunit++){
           arr[abunit] = String(Number(arr[abunit]) + Number(diff));
         }
+        return arr;
+
+      case "ENG"      :
+      case "ENGINEER" :
+      case "NOTATION" :
+      case "UNITS"    :
+      case "EN"       :
+        arr.pop();
+        var engnotarr = [];
+        for(var i = 0; i < arr.length; i ++){
+          engnotarr[i] = engnot(arr[i]);
+        }
+        console.log("Result: ", engnotarr);
         return arr;
 
       // Find the medaian of the set of numbers
