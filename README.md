@@ -74,7 +74,7 @@ Examples
 | `MAXIMUM`   | Get the max value in the set                   | `MAX`
 | `MINIMUM`   | Get the min value in the sat                   | `MIN`
 | `ADDBY`     | Add all numbers by the newest number           | `AB`
-| `MULTIBY`   | Multiply all numbers my newest number          | `MB`
+| `MULTIBY`   | Multiply all numbers by newest number          | `MB`
 | `SORT`      | Sorts numbers from low to high                 | `L`
 | `TROS`      | Sorts numbers from high to low                 | `H`
 | `ENGINEER`  | Puts all numbers in engineering notation       | `EN`
