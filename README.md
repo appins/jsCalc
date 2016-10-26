@@ -85,11 +85,11 @@ Examples
 | `CLEAR`     | Clear all entries                              | `CL`
 | `EXIT`      | Leaves the program                             | `E`
 
-#### Engineering commands
-| Command     | Use                                            | Shortcut
-|-------------|------------------------------------------------|---------
-| `%`         | Find engineering notation of a number.         | N/A
-
+#### Engineering commands (all engineering commands start with `%`)
+| Command     | Use                                                 | Shortcut
+|-------------|-----------------------------------------------------|---------
+| `%`         | Find engineering notation of a number.              | N/A
+| `%SERIES`   | Voltage is most left, everything else is a resistor | `%SC`
 
 ### TODO
 Add larger numbers, maybe. Currently this project used the basic `var` to create variables.
