@@ -9,7 +9,8 @@ This calculator is *NOT FORTH* this calculator is just similar to forth in a few
 
 This calculator is useful for things like averages, addition, multiplication and other operations (like mode) on a set of numbers. It was primarily created for standard deviations and other useful operations.
 
-Currently it doesn't have all that I want. I will be frequently adding uses and applications that will be useful to students in engineering and hopefully computer science too.
+Currently it doesn't have all that I want. I will be frequently adding uses and applications that will be useful to
+students in engineering and hopefully computer science too.
 
 This calculator is not based on forth, but after learning what forth is I realized it had a very similar style.
 
@@ -89,7 +90,8 @@ Examples
 | Command     | Use                                                 | Shortcut
 |-------------|-----------------------------------------------------|---------
 | `%`         | Find engineering notation of a number.              | N/A
-| `%SERIES`   | Voltage is most left, everything else is a resistor | `%SC`
+| `%SERIES`   | A series circuit: Oldest value is voltage and everything else is resistance in ohms | `%SC`
+| `%COMP`     | Divide every value in the array by the max          | `%C`
 
 ### TODO
 Add larger numbers, maybe. Currently this project used the basic `var` to create variables.

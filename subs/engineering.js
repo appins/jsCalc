@@ -19,7 +19,6 @@ module.exports.main = function(arr){
     case "%SERIES" :
       arr.pop();
       var seriesarr = arr;
-      // Voltage
       console.log('\n', "Voltage total: ", calc.engnot(seriesarr[0]) + "V");
       var v = seriesarr[0];
       seriesarr.shift();
@@ -30,12 +29,28 @@ module.exports.main = function(arr){
       console.log("Resistance total: ", calc.engnot(tr) + "Ω");
       console.log("Current total: ", calc.engnot(v / tr) + "A");
       for(var resist = 0; resist < seriesarr.length; resist++){
-        console.log("Voltage drop " + (resist + 1) + ": ", calc.engnot(seriesarr[resist] * v / tr) + "V", '\n');
+        console.log('\n', "Voltage drop " + (resist + 1) + ": ", calc.engnot(seriesarr[resist] * v / tr) + "V");
       }
+      console.log('\n');
 
       arr = (v + ',' + arr).split(',');
-
       break;
+
+    case "%COMP"  :
+    case "%WEIGH" :
+    case "%C"     :
+      arr.pop();
+      var max = arr[0];
+      for(var frac = 1; frac < arr.length; frac++){
+        if(arr[frac] > max){
+          max = arr[frac];
+        }
+      }
+      for(var tot = 0; tot < arr.length; tot++){
+        arr[tot] /= max;
+      }
+    break;
+
     default:
       console.log("ENG command not found...");
       arr.pop();
