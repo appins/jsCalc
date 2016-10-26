@@ -328,6 +328,10 @@ module.exports.proc = function(arr){
         if(min !== undefined) res = min;
         break;
 
+      case "":
+        console.log("Please enter a command and then try again...");
+        return arr;
+
       // Clear the array
       case "CLEAR":
       case "CL"   :
@@ -348,6 +352,10 @@ module.exports.proc = function(arr){
         return "exit";
 
       default:
+        if(lastIn[0] == "%"){
+          var engineering = require("./subs/engineering.js");
+          return engineering.main(arr);
+        }
         arr.pop();
         console.log("Incorrect input: " + lastIn);
         return arr;

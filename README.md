@@ -58,6 +58,7 @@ Examples
 ### Current commands
 (capitalization doesn't matter)
 
+#### Normal commands
 | Command     | Use                                            | Shortcut
 |-------------|------------------------------------------------|---------
 | `ADD`       | Adds all numbers together                      | `+`
@@ -83,6 +84,12 @@ Examples
 | `DELETE`    | Deletes last element in the array              | `DEL`
 | `CLEAR`     | Clear all entries                              | `CL`
 | `EXIT`      | Leaves the program                             | `E`
+
+#### Engineering commands
+| Command     | Use                                            | Shortcut
+|-------------|------------------------------------------------|---------
+| `%`         | Find engineering notation of a number.         | N/A
+
 
 ### TODO
 Add larger numbers, maybe. Currently this project used the basic `var` to create variables.
