@@ -107,7 +107,14 @@ module.exports.proc = function(arr){
       case "SORTL"     :
       case "L"         :
         arr.pop();
-        arr.sort(function(a,b){return a-b;});
+        arr.sort(function(a,b){return Number(a)-Number(b);});
+        return arr;
+      case "HIGHTOLOW" :
+      case "H"         :
+      case "TROS"      :
+      case "SORTH"     :
+        arr.pop();
+        arr.sort(function(a,b){return Number(b)-Number(a);});
         return arr;
 
       // Square root only the last number

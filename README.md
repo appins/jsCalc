@@ -74,7 +74,8 @@ Examples
 | `MINIMUM`   | Get the min value in the sat                   | `MIN`
 | `ADDBY`     | Add all numbers by the newest number           | `AB`
 | `MULTIBY`   | Multiply all numbers my newest number          | `MB`
-| `SORTL`     | Sorts numbers from low to high                 | `L`
+| `SORT`      | Sorts numbers from low to high                 | `L`
+| `TROS`      | Sorts numbers from high to low                 | `H`
 | `ENGINEER`  | Puts all numbers in engineering notation       | `EN`
 | `RANDOM`    | Inset a random 1 or a random 0                 | `RAND`
 | `NEWTOOLD`  | Move the newest to the oldest                  | `NTO`
