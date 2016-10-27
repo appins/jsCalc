@@ -98,8 +98,5 @@ Examples
 |-------------|-------------------------------------------------------|----------
 | `DIVIDE`    | Divide the most recent 2 values (2nd newest / newest) | `/`
 
-### TODO
-Add larger numbers, maybe. Currently this project used the basic `var` to create variables.
-
 ### Bugs
-If you find any buys report them by [email](mailto:alexandersonone@gmail.com)
+If you find any buys please report them by [email](mailto:alexandersonone@gmail.com)
