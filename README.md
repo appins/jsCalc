@@ -26,7 +26,7 @@ If you don't have GNU/Make, you can use `node app.js`
 
 ### Using
 Currently, this calculator has several uses.
-To enter number, just type a number and hit enter, to ender a command,
+To enter number, just type a number and hit enter, to enter a command,
 just enter the word of the command.
 
 This project is similar to the FORTH programming language
