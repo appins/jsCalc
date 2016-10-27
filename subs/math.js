@@ -24,6 +24,7 @@ module.exports.main = function(arr){
       arr[arr.length - 1] -= sub;
       break;
 
+    // Switch newest 2 variables
     case "SWITCH" :
     case "SHUF"   :
     case "S"      :
@@ -35,6 +36,7 @@ module.exports.main = function(arr){
       arr[arr.length - 1] = arr[arr.length - 2];
       arr[arr.length - 2] = newest;
       break;
+
     default:
       console.log("Command: \'" + arr[arr.length - 1] + "\' not found.");
       arr.pop();
