@@ -93,6 +93,11 @@ Examples
 | `%SERIES`   | A series circuit: Oldest value is voltage and everything else is resistance in ohms | `%SC`
 | `%COMP`     | Divide every value in the array by the max          | `%C`
 
+#### Additional math commands
+| Command     | Use                                                   | Shortcut
+|-------------|-------------------------------------------------------|----------
+| `DIVIDE`    | Divide the most recent 2 values (2nd newest / newest) | `/`
+
 ### TODO
 Add larger numbers, maybe. Currently this project used the basic `var` to create variables.
 

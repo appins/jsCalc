@@ -353,12 +353,13 @@ module.exports.proc = function(arr){
 
       default:
         if(lastIn[0] == "%"){
-          var engineering = require("./subs/engineering.js");
+          const engineering = require("./subs/engineering.js");
           return engineering.main(arr);
         }
-        arr.pop();
-        console.log("Incorrect input: " + lastIn);
-        return arr;
+        else{
+          const mathjs = require("./subs/math.js");
+          return mathjs.main(arr);
+        }
     }
 
       return [String(res)];
