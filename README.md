@@ -22,6 +22,20 @@ Please note that you need node.js installed.
 
 If you don't have GNU/Make, you can use `node app.js`
 
+##### Easy guide for newcomers
+  1. Go to the github page for this project (you're already there)
+  2. Click "Clone or download"
+  3. Click "Download zip"
+  4. Get node if you don't already have it. Available [here](https://nodejs.org/en/)
+  5. Open the zip file and drag jsCalc-master to your desktop
+  6. Open CMD (Windows + X)
+  7. Enter these commands
+  ```
+    cd Desktop
+    cd jsCalc-master
+    node main.js
+  ```
+
 ---
 
 ### Using
@@ -99,7 +113,7 @@ Examples
 | `DIVIDE`     | Divide the most recent 2 values (2nd newest / newest) | `/`
 | `MINUS`      | Subtract the most recent 2 values, works just like divide | `-`
 | `SWITCH`     | Switch the newest two values around                   | `S`
-| `PERCENTAGE` | Divide every number over the whole val1 / (val1+val2) | `FRAC`
+| `OVERWHOLE`  | Divide every number over the whole val1 / (val1+val2) | `FRAC`
 
 ### Bugs
 If you find any buys please report them by [email](mailto:alexandersonone@gmail.com)
