@@ -1,4 +1,8 @@
 // This file does calculations on inputted arrays
+// NOTE: This file returns [res], not arr like it should
+// NOTE: So you have to use `return arr;` at the end of a case
+// NOTE: Also, this file contains engnot(), so you NEED it
+// NOTE: For subs/engineering.js (Must be in ../)
 
 /*jshint esversion: 6 */
 
