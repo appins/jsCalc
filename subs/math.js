@@ -43,6 +43,23 @@ module.exports.main = function(arr){
       arr[arr.length - 1] /= 100;
       break;
 
+    // Calculate the perecentage of the whole for each number
+    case "OVERWHOLE"  :
+    case "FRAC"       :
+    case "OW"         :
+    case "FRACTION"   :
+    case "PERCENTAGE" :
+      arr.pop();
+      var total = 0;
+      for(var ow = 0; ow < arr.length; ow++){
+        total += Number(arr[ow]);
+      }
+
+      for(var ow1 = 0; ow1 < arr.length; ow1++){
+        arr[ow1] /= total;
+      }
+      break;
+
     default:
       console.log("Command: \'" + arr[arr.length - 1] + "\' not found.");
       arr.pop();

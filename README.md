@@ -94,11 +94,12 @@ Examples
 | `%COMP`     | Divide every value in the array by the max          | `%C`
 
 #### Additional math commands
-| Command     | Use                                                   | Shortcut
-|-------------|-------------------------------------------------------|----------
-| `DIVIDE`    | Divide the most recent 2 values (2nd newest / newest) | `/`
-| `MINUS`     | Subtract the most recent 2 values, works just like divide | `-`
-| `SWITCH`    | Switch the newest two values around                   | `S`
+| Command      | Use                                                   | Shortcut
+|--------------|-------------------------------------------------------|----------
+| `DIVIDE`     | Divide the most recent 2 values (2nd newest / newest) | `/`
+| `MINUS`      | Subtract the most recent 2 values, works just like divide | `-`
+| `SWITCH`     | Switch the newest two values around                   | `S`
+| `PERCENTAGE` | Divide every number over the whole val1 / (val1+val2) | `FRAC`
 
 ### Bugs
 If you find any buys please report them by [email](mailto:alexandersonone@gmail.com)
