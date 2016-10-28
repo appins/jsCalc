@@ -113,7 +113,7 @@ Examples
 | `DIVIDE`     | Divide the most recent 2 values (2nd newest / newest) | `/`
 | `MINUS`      | Subtract the most recent 2 values, works just like divide | `-`
 | `SWITCH`     | Switch the newest two values around                   | `S`
-| `OVERWHOLE`  | Divide every number over the whole val1 / (val1+val2) | `FRAC`
+| `OVERWHOLE`  | Divide every number over the whole val1 / (val1+val2) | `OW`
 
 ### Bugs
 If you find any buys please report them by [email](mailto:alexandersonone@gmail.com)

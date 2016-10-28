@@ -45,10 +45,8 @@ module.exports.main = function(arr){
 
     // Calculate the perecentage of the whole for each number
     case "OVERWHOLE"  :
-    case "FRAC"       :
     case "OW"         :
-    case "FRACTION"   :
-    case "PERCENTAGE" :
+    case "DECIMAL"    :
       arr.pop();
       var total = 0;
       for(var ow = 0; ow < arr.length; ow++){
