@@ -37,6 +37,12 @@ module.exports.main = function(arr){
       arr[arr.length - 2] = newest;
       break;
 
+    // Transforms numbers into perecentages, trivial
+    case "." :
+      arr.pop();
+      arr[arr.length - 1] /= 100;
+      break;
+
     default:
       console.log("Command: \'" + arr[arr.length - 1] + "\' not found.");
       arr.pop();
