@@ -301,10 +301,10 @@ module.exports.proc = function(arr){
       case "HIGH"    :
       case "MOST"    :
         arr.pop();
-        var max = arr[0];
+        var max = Number(arr[0]);
         arr.shift();
         while(arr.length > 0){
-          if(arr[0] > max){
+          if(Number(arr[0]) > Number(max)){
             max = arr[0];
           }
           arr.shift();
@@ -320,10 +320,10 @@ module.exports.proc = function(arr){
       case "LOW"     :
       case "LOWEST"  :
         arr.pop();
-        var min = arr[0];
+        var min = Number(arr[0]);
         arr.shift();
         while(arr.length > 0){
-          if(arr[0] < min){
+          if(Number(arr[0]) < Number(min)){
             min = arr[0];
           }
           arr.shift();
