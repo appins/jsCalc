@@ -36,6 +36,28 @@ module.exports.main = function(arr){
       arr = (v + ',' + arr).split(',');
       break;
 
+    // Parallel circut
+    // TODO: Add EN
+    case "%PL" :
+    case "%PARALLEL":
+      arr.pop();
+      console.log('\n', "Voltage total: ", calc.engnot(arr[0]) + "V");
+      var parres = 0;
+      for(var parinc = 1; parinc < arr.length; parinc ++){
+        parres += (1 / arr[parinc]);
+      }
+
+      parres = 1 / parres;
+      console.log('\n', "Resistance total: ", calc.engnot(parres) + "Ω");
+
+      console.log('\n', "Current total: ", calc.engnot(arr[0] / parres) + "A", '\n');
+
+      for(var par = 1; par < arr.length; par ++){
+        console.log("Current through resistor " + par + ": ", calc.engnot(arr[0] / arr[par]) + "Ω");
+      }
+      break;
+
+
     case "%COMP"  :
     case "%WEIGH" :
     case "%C"     :
