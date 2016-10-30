@@ -9,6 +9,22 @@
 
 // NOTE: The second param in "module.exports.proc" is for "subs/*"
 // NOTE: Set it to true if you have the folder, and false if you don't
+// If you can get the subs, you should set it to true as it is really
+// useful to have them, especially the math one.
+
+// To use this, just input an array exactly as you would expect.
+// For example, calc.proc([5, 4, 3, "add"], true);
+// It will return the sum of the three numbers. Please note that
+// numbers in arrays that are returned are always formatted as strings.
+
+// This is a good example on how to operate an array
+
+// var calc = require("calc.js");
+// var x = ['5', '4', '5', '5', "av"];
+// console.log(calc.proc(x, false));
+
+// If you have questions about anything, please email me
+// Alexandersonone@gmail.com
 
 /*jshint esversion: 6 */
 
