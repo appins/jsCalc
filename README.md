@@ -105,6 +105,7 @@ Examples
 |-------------|-----------------------------------------------------|---------
 | `%`         | Find engineering notation of a number.              | N/A
 | `%SERIES`   | A series circuit: Oldest value is voltage and everything else is resistance in ohms | `%SC`
+| `%PARALLEL` | Same as series, but with a parallel circuit instead | `%PL`
 | `%COMP`     | Divide every value in the array by the max          | `%C`
 
 #### Additional math commands
