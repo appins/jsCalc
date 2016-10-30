@@ -2,7 +2,7 @@
 // NOTE: This file returns [res], not arr like it should
 // NOTE: So you have to use `return arr;` at the end of a case
 // NOTE: Also, this file contains engnot(), so you NEED it
-// NOTE: For subs/engineering.js (Must be in ../)
+// NOTE: for subs/engineering.js (Must be in ../).
 
 // If you are missing the subs folder, or any of the files in it you can
 // disable it and use the basic commands by passing proc(arr, false)

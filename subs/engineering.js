@@ -1,4 +1,5 @@
 // A useful file that contains many engineering commands
+// NOTE: REQUIRES calc (for "engnot(x)")
 
 var calc = require("../calc.js");
 
