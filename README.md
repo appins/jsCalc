@@ -115,6 +115,6 @@ Examples
 | `MINUS`      | Subtract the most recent 2 values, works just like divide | `-`
 | `SWITCH`     | Switch the newest two values around                   | `S`
 | `OVERWHOLE`  | Divide every number over the whole val1 / (val1+val2) | `OW`
-
+| `EXPONENT`   | Raise second newest number to newest number           | `**` or `^`
 ### Bugs
 If you find any buys please report them by [email](mailto:alexandersonone@gmail.com)

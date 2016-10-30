@@ -58,6 +58,17 @@ module.exports.main = function(arr){
       }
       break;
 
+    // Exponent
+    case "EXPONENT" :
+    case "^"        :
+    case "EXP"      :
+    case "**"       :
+      arr.pop();
+      var exp = arr[arr.length - 1];
+      arr.pop();
+      arr[arr.length - 1] = Math.pow(arr[arr.length - 1], exp);
+      break;
+
     default:
       console.log("Command: \'" + arr[arr.length - 1] + "\' not found.");
       arr.pop();
