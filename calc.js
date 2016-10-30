@@ -14,7 +14,7 @@
 
 // Get engineering notation of units
 function engnot(x){
-  // [value under/equil to x, value over x, name, multiplier]
+  // [value under/equal to x, value over x, name, multiplier]
   var units = [
     // Over (or equal to) 1
     [1e0 , 1e3 , "" , 1e0  ],
