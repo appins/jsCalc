@@ -4,6 +4,12 @@
 // NOTE: Also, this file contains engnot(), so you NEED it
 // NOTE: For subs/engineering.js (Must be in ../)
 
+// If you are missing the subs folder, or any of the files in it you can
+// disable it and use the basic commands by passing proc(arr, false)
+
+// NOTE: The second param in "module.exports.proc" is for "subs/*"
+// NOTE: Set it to true if you have the folder, and false if you don't
+
 /*jshint esversion: 6 */
 
 // Get engineering notation of units
@@ -34,7 +40,7 @@ function engnot(x){
 
 module.exports.engnot = engnot;
 
-module.exports.proc = function(arr){
+module.exports.proc = function(arr, bit){
   var lastIn = arr[arr.length - 1];
 
   // If last input was a number
@@ -356,13 +362,18 @@ module.exports.proc = function(arr){
         return "exit";
 
       default:
-        if(lastIn[0] == "%"){
+        if(lastIn[0] == "%" && bit){
           const engineering = require("./subs/engineering.js");
           return engineering.main(arr);
         }
-        else{
+        else if(bit){
           const mathjs = require("./subs/math.js");
           return mathjs.main(arr);
+        }
+        else{
+          console.log("Command not found");
+          arr.pop();
+          return arr;
         }
     }
 

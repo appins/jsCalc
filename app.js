@@ -17,7 +17,7 @@ function getAns(){
 
   rl.question(":", function(data){
     nums[nums.length] = data;
-    nums = calc.proc(nums);
+    nums = calc.proc(nums, true);
     setTimeout(function(){
       console.log(nums);
       if(nums !== "exit")
