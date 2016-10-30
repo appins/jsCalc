@@ -37,7 +37,6 @@ module.exports.main = function(arr){
       break;
 
     // Parallel circut
-    // TODO: Add EN
     case "%PL" :
     case "%PARALLEL":
       arr.pop();
