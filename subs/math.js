@@ -69,6 +69,22 @@ module.exports.main = function(arr){
       arr[arr.length - 1] = Math.pow(arr[arr.length - 1], exp);
       break;
 
+    // Multiply each pair of numbers
+    case "MULTI2"     :
+    case "MULTIPAIRS" :
+    case "MULTIPY"    :
+    case "*P"         :
+    case "*2"         :
+      arr.pop();
+      var multi2 = [];
+      for(var multi2C = 0; multi2C < arr.length; multi2C += 2){
+        multi2[multi2C / 2] = arr[multi2C] * arr[multi2C + 1];
+        if(isNaN(multi2[multi2C / 2])){
+          multi2[multi2C / 2] = arr[multi2C];
+        }
+      }
+      return multi2;
+
     default:
       console.log("Command: \'" + arr[arr.length - 1] + "\' not found.");
       arr.pop();
