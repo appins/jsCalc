@@ -375,6 +375,7 @@ module.exports.proc = function(arr, bit){
         return [];
 
       // Delte the last member (if there is one)
+      case "POP"   :
       case "DEL"   :
       case "DELTE" :
         arr.pop();
