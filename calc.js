@@ -236,6 +236,17 @@ module.exports.proc = function(arr, bit){
         console.log("Result: ", engnotarr);
         return arr;
 
+      // Duplicate an array
+      case "DUPLICATE"  :
+      case "DUPE"       :
+      case "COPY"       :
+        arr.pop();
+        var length = arr.length;
+        for(var copy = 0; copy < length; copy++){
+          arr[length + copy] = arr[copy];
+        }
+        return arr;
+
       // Find the medaian of the set of numbers
       case "MEDIAN" :
       case "MED"    :
