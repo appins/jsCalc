@@ -365,10 +365,6 @@ module.exports.proc = function(arr, bit){
         if(min !== undefined) res = min;
         break;
 
-      case "":
-        console.log("Please enter a command and then try again...");
-        return arr;
-
       // Clear the array
       case "CLEAR":
       case "CL"   :
