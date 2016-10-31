@@ -63,6 +63,7 @@ module.exports.proc = function(arr, bit){
   if(Number(lastIn) || Number(lastIn) === 0){
     if(lastIn === ''){
       arr.pop();
+      console.log("Please enter a command or a number!");
     }
     return arr;
 
