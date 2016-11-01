@@ -211,6 +211,14 @@ module.exports.proc = function(arr, bit){
         arr = (arr + ',' + oldest).split(',');
         return arr;
 
+      // Reverse the array
+      case "REVERSE"   :
+      case "REV"       :
+      case "BACKWARDS" :
+        arr.pop();
+        arr.reverse();
+        return arr;
+
       // Add all numbers by the last one in the array
       case "ADDBY" :
       case "SUMBY" :

@@ -96,6 +96,7 @@ Examples
 | `RANDOM`    | Inset a random 1 or a random 0                 | `RAND`
 | `NEWTOOLD`  | Move the newest to the oldest                  | `NTO`
 | `OLDTONEW`  | Move the oldest to the newest                  | `OTN`
+| `REVERSE`   | Reverse the array                              | `REV`
 | `DUPLICATE` | Append the whole array to the end              | `DUPE`
 | `DELETE`    | Deletes last element in the array              | `DEL`
 | `CLEAR`     | Clear all entries                              | `CL`
