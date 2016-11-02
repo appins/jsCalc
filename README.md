@@ -121,5 +121,10 @@ Examples
 | `EXPONENT`   | Raise second newest number to newest number           | `**` or `^`
 | `MULTI2`     | Multiply each pair of numbers together                | `*2`
 
+#### Programming based commands
+| Command         | Use                                                   | Shortcut
+|-----------------|-------------------------------------------------------|---------
+| `$STRING:...`   | Convert a string (marked by the `...`) into char codes and insert it as the end of the array. (e.g. `$S:Hello`) | `$S:...`
+
 ### Bugs
 If you find any buys please report them by [email](mailto:alexandersonone@gmail.com)

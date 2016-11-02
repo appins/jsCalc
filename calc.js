@@ -399,6 +399,10 @@ module.exports.proc = function(arr, bit){
           const engineering = require("./subs/engineering.js");
           return engineering.main(arr);
         }
+        else if(lastIn[0] == "$" && bit){
+          const programming = require("./subs/programming.js");
+          return programming.main(arr);
+        }
         else if(bit){
           const mathjs = require("./subs/math.js");
           return mathjs.main(arr);
