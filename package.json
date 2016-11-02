@@ -1,5 +1,8 @@
 {
   "name": "jsCalc",
-  "version": "0.0.1",
-  "main": "app.js"
+  "author" : "AppIns",
+  "description" : "A CLI calculator written in node.js with a forth style",
+  "version": "0.1.1",
+  "license" : "MIT",
+  "main": "calc.js"
 }
