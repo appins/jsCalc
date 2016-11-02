@@ -30,6 +30,7 @@ If you don't have GNU/Make, you can use `node app.js`
   5. Open the zip file and drag jsCalc-master to your desktop
   6. Open CMD (Windows + X)
   7. Enter these commands
+
   ```
     cd Desktop
     cd jsCalc-master
