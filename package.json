@@ -2,7 +2,7 @@
   "name": "jsCalc",
   "author" : "AppIns",
   "description" : "A CLI calculator written in node.js with a forth style",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license" : "MIT",
   "main": "calc.js"
 }
