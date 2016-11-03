@@ -125,6 +125,7 @@ Examples
 | Command         | Use                                                   | Shortcut
 |-----------------|-------------------------------------------------------|---------
 | `$STRING:...`   | Convert a string (marked by the `...`) into char codes and insert it as the end of the array. (e.g. `$S:Hello`) | `$S:...`
+| `$BINARY:...`   | Convert a binary string to a number that is appended at the end of the array | `$BIN:...`
 
 ### Bugs
 If you find any buys please report them by [email](mailto:alexandersonone@gmail.com)
