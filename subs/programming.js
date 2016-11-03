@@ -14,6 +14,13 @@ function main(arr){
         arr[arr.length] = string.charCodeAt(stringI);
       }
       break;
+    case "$BINARY" :
+    case "$BIN"    :
+      var bin = arr[arr.length - 1].split(":")[1];
+      var binInt = String(parseInt(bin, 2));
+      arr.pop();
+      arr[arr.length] = binInt;
+      break;
     default:
     arr.pop();
     console.log("Command or pattern not found...");
