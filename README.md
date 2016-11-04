@@ -99,6 +99,7 @@ Examples
 | `OLDTONEW`  | Move the oldest to the newest                  | `OTN`
 | `REVERSE`   | Reverse the array                              | `REV`
 | `DUPLICATE` | Append the whole array to the end              | `DUPE`
+| `FIX`       | Removes all problems from the array            | N/A
 | `DELETE`    | Deletes last element in the array              | `DEL`
 | `CLEAR`     | Clear all entries                              | `CL`
 | `EXIT`      | Leaves the program                             | `E`

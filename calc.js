@@ -379,6 +379,18 @@ module.exports.proc = function(arr, bit){
       case "CL"   :
         return [];
 
+      // Fix the array
+      case "FIX" :
+        arr.pop();
+        var fixArr = [];
+        for(var fixI = 0; fixI < arr.length; fixI++){
+          if(!(arr[fixI] === undefined || arr[fixI] === null || isNaN(arr[fixI]) ||
+            arr[fixI] === '')){
+              fixArr[fixArr.length] = arr[fixI];
+          }
+        }
+        return fixArr;
+
       // Delte the last member (if there is one)
       case "POP"   :
       case "DEL"   :
