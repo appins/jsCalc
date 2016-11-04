@@ -19,7 +19,12 @@ function main(arr){
       var bin = arr[arr.length - 1].split(":")[1];
       var binInt = String(parseInt(bin, 2));
       arr.pop();
-      arr[arr.length] = binInt;
+      if(isNaN(binInt)){
+        console.log("\`" + bin + "\` is not a binary string");
+      }
+      else{
+        arr[arr.length] = binInt;
+      }
       break;
     default:
     arr.pop();
