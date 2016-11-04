@@ -121,6 +121,7 @@ Examples
 | `OVERWHOLE`  | Divide every number over the whole val1 / (val1+val2) | `OW`
 | `EXPONENT`   | Raise second newest number to newest number           | `**` or `^`
 | `MULTI2`     | Multiply each pair of numbers together                | `*2`
+| `MODULO`     | Preform the second newest number mod the newest       | `MOD`
 
 #### Programming based commands
 | Command         | Use                                                   | Shortcut

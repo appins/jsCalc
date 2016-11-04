@@ -85,6 +85,15 @@ module.exports.main = function(arr){
       }
       return multi2;
 
+    case "MODULO" :
+    case "MOD"    :
+      arr.pop();
+      var base = arr[arr.length - 2];
+      var mod = arr[arr.length - 1];
+      arr.pop();
+      arr[arr.length - 1] = base % mod;
+      break;
+
     default:
       console.log("Command: \'" + arr[arr.length - 1] + "\' not found.");
       arr.pop();
