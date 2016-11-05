@@ -34,7 +34,7 @@ If you don't have GNU/Make, you can use `node app.js`
   ```
     cd Desktop
     cd jsCalc-master
-    node main.js
+    node app.js
   ```
 
 ---
