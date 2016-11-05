@@ -66,6 +66,10 @@ Examples
   [ '5', '6', '7' ]
 :add
   [ '18' ]
+:clear
+  []
+:20 30 10 add
+  [ '60' ]
 ```
 
 ---
@@ -73,6 +77,10 @@ Examples
 
 ### Current commands
 (capitalization doesn't matter)
+
+Separating numbers and commands with spaces (like `10 30 20 add`) works too now.
+
+Unfortunately, this doesn't work with commands.
 
 #### Normal commands
 | Command     | Use                                            | Shortcut
