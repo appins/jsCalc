@@ -80,7 +80,7 @@ Examples
 
 Separating numbers and commands with spaces (like `10 30 20 add`) works too now.
 
-Unfortunately, this doesn't work with commands.
+This works with commands too, each part, separated by a space, is executed part by part.
 
 #### Normal commands
 | Command     | Use                                            | Shortcut

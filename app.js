@@ -20,7 +20,11 @@ function getAns(){
       nums[nums.length] = data;
     }
     else{
-      nums = (nums + "," + data.split(" ")).split(",");
+      var part = data.split(" ");
+      while(part.length > 0){
+        nums = calc.proc((nums + ',' + part[0]).split(","));
+        part.shift();
+      }
     }
 
     nums = calc.proc(nums, true);
