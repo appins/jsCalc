@@ -16,7 +16,13 @@ function getAns(){
   });
 
   rl.question(":", function(data){
-    nums[nums.length] = data;
+    if(data.split(" ").length == 1){
+      nums[nums.length] = data;
+    }
+    else{
+      nums = (nums + "," + data.split(" ")).split(",");
+    }
+
     nums = calc.proc(nums, true);
     setTimeout(function(){
       console.log(nums);
