@@ -379,7 +379,7 @@ module.exports.proc = function(arr, bit){
       case "CL"   :
         return [];
 
-      // Fix the array
+      // Fix the array, remove all NaN's, undefineds, and string's
       case "FIX" :
         arr.pop();
         var fixArr = [];
