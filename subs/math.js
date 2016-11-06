@@ -2,6 +2,8 @@
 // This file is the last step on the alternate commands
 // Meaning all commands may not be math commands
 
+// TODO: Add new "=" based commands
+
 module.exports.main = function(arr){
   switch (arr[arr.length - 1].toUpperCase()) {
     // Divide last two

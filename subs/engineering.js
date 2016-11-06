@@ -1,6 +1,8 @@
 // A useful file that contains many engineering commands
 // NOTE: REQUIRES calc (for "engnot(x)")
 
+// TODO: cut off decimals by 2 places
+
 var calc = require("../calc.js");
 
 module.exports.main = function(arr){
