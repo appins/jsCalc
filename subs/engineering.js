@@ -55,7 +55,7 @@ module.exports.main = function(arr){
       console.log('\n', "Current total: ", calc.engnot(arr[0] / parres) + "A", '\n');
 
       for(var par = 1; par < arr.length; par ++){
-        console.log("Current through resistor " + par + ": ", calc.engnot(arr[0] / arr[par]) + "Ω");
+        console.log("Current through resistor " + par + ": ", calc.engnot(arr[0] / arr[par]) + "A");
       }
       break;
 
