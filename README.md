@@ -1,3 +1,4 @@
+[![AppIns](https://i.imgur.com/xEPu5Ug.png)](https://github.com/appins)
 # Node.js calculator
 A CLI calculator made in node.js
 
